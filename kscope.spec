@@ -2,8 +2,8 @@ Summary:	KDE front-end to Cscope
 Summary(pl):	Interfejs KDE do Cscope
 Name:		kscope
 Version:	1.0
-Release:	2
-License:	GPL
+Release:	3
+License:	GPL v2
 Group:		X11/Development/Tools
 Source0:	http://dl.sourceforge.net/kscope/%{name}-%{version}.tar.gz
 # Source0-md5:	f6dbd3916b6dc3b85472a3207fa12a00
@@ -68,5 +68,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README TODO 
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/apps/%{name}
-%{_iconsdir}/*/*/*/*.png
+%{_iconsdir}/hicolor/*/*/*.png
 %{_desktopdir}/kde/*.desktop
