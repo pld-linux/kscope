@@ -38,7 +38,7 @@ zwykle nie pasuj± do utrzymywania du¿ych projektów, u¿ywaj±cych
 programowania funkcyjnego. Na przyk³ad, u¿ywanie okna "Klasy" do
 wy¶wietlania tysiêcy funkcji z j±dra Linuksa, by³oby niepraktyczne, i
 przeszkadza³oby w u¿ytecznej nawigacji po kodzie. KScope, z drugiej
-strony, dostarcza raczej przydatny mechanizm do nawigacji po kodzie,
+strony, dostarcza ca³kiem przydatny mechanizm do nawigacji po kodzie,
 pozwalaj±c u¿ytkownikowi wykonywaæ zapytania na kodzie.
 
 %prep
