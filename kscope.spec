@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Development/Tools
 Source0:	http://dl.sourceforge.net/kscope/%{name}-%{version}.tar.gz
 # Source0-md0:	7a273bca1ed74abd1e1e83224c283eb8
+Patch0:		%{name}-desktop.patch
 URL:		http://kscope.sourceforge.net/
 BuildRequires:	kdebase-devel
 Requires:	cscope
@@ -40,6 +41,7 @@ pozwalaj±c u¿ytkownikowi wykonywaæ zapytania na kodzie.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure
@@ -49,7 +51,7 @@ pozwalaj±c u¿ytkownikowi wykonywaæ zapytania na kodzie.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	shelldesktopdir=%{_desktopdir} \
+	shelldesktopdir=%{_desktopdir}/kde \
 	kde_htmldir=%{_kdedocdir} \
 	DESTDIR=$RPM_BUILD_ROOT
 
@@ -60,8 +62,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc ChangeLog
+%doc AUTHORS ChangeLog NEWS README TODO 
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/apps/%{name}
 %{_iconsdir}/*/*/*/*.png
-%{_desktopdir}/*.desktop
+%{_desktopdir}/kde/*.desktop
