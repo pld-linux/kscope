@@ -25,4 +25,4 @@ diff -Nura kscope-0.6/src/kscope.desktop kscope-0.6.work/src/kscope.desktop
 +Comment=KDE front-end to Cscope
 +Comment[pl]=Frontend KDE do Cscope
 +Comment[xx]=xxKDE front-end to Cscopexx
-+Categories=Qt;KDE;TextEditor;
++Categories=Qt;KDE;Development;
