@@ -1,0 +1,28 @@
+diff -Nura kscope-0.6/src/kscope.desktop kscope-0.6.work/src/kscope.desktop
+--- kscope-0.6/src/kscope.desktop	2003-12-19 05:58:28.000000000 +0100
++++ kscope-0.6.work/src/kscope.desktop	2004-05-31 20:54:53.000000000 +0200
+@@ -5,20 +5,7 @@
+ Exec=kscope
+ Icon=kscope
+ Type=Application
+-Comment=A simple KDE Application
+-Comment[ca]=Una simple aplicació KDE
+-Comment[da]=Et simpelt KDE program
+-Comment[de]=Eine einfache KDE-Anwendung
+-Comment[el]=Μια απλή εφαρμογή του KDE
+-Comment[es]=Una aplicación de KDE sencilla
+-Comment[et]=Lihtne KDE rakendus
+-Comment[fr]=Une application simple pour KDE.
+-Comment[hu]=Egyszerű KDE-alkalmazás
+-Comment[it]=Una semplice applicazione KDE
+-Comment[pt]=Uma aplicação KDE simples
+-Comment[pt_BR]=Um simples Aplicativo do KDE
+-Comment[ru]=Простое приложение KDE
+-Comment[sl]=Preprost program za KDE
+-Comment[sr]=Проста KDE-ова апликација
+-Comment[sv]=Ett enkelt KDE-program
+-Comment[xx]=xxA simple KDE Applicationxx
++Comment=KDE front-end to Cscope
++Comment[pl]=Frontend KDE do Cscope
++Comment[xx]=xxKDE front-end to Cscopexx
++Categories=Qt;KDE;TextEditor;
