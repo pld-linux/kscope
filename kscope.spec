@@ -1,4 +1,5 @@
 Summary:	KDE front-end to Cscope
+Summary(pl):	Interfejs KDE do Cscope
 Name:		kscope
 Version:	0.6
 Release:	1
@@ -7,8 +8,8 @@ Group:		X11/Development/Tools
 Source0:	http://dl.sourceforge.net/kscope/%{name}-%{version}.tar.gz
 # Source0-md0:	7a273bca1ed74abd1e1e83224c283eb8
 URL:		http://kscope.sourceforge.net/
-Requires:	cscope
 BuildRequires:	kdebase-devel
+Requires:	cscope
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,6 +25,19 @@ will prevent any useful navigation throughout the code. KScope, on the
 other hand, provides a rather useful mechanism for code-navigation, by
 allowing the user to run queries on the code.
 
+%description -l pl
+KScope to interfejs KDE do Cscope. Daje ¶rodowisko do edycji ¼róde³
+dla du¿ych projektów w C, jak na przyk³ad j±dro Linuksa. KScope nie ma
+byæ zamiennikiem dla ¿adnego z wiod±cych IDE dla Linuksa/KDE, takich
+jak KDevelop. Mimo wszystko, te IDE, czêsto przeznaczone do
+programowania zorientowanego obiektowo, w przestrzeni u¿ytkownika,
+zwykle nie pasuj± do utrzymywania du¿ych projektów, u¿ywaj±cych
+programowania funkcyjnego. Na przyk³ad, u¿ywanie okna "Klasy" do
+wy¶wietlania tysiêcy funkcji z j±dra Linuksa, by³oby niepraktyczne, i
+przeszkadza³oby w u¿ytecznej nawigacji po kodzie. KScope, z drugiej
+strony, dostarcza raczej przydatny mechanizm do nawigacji po kodzie,
+pozwalaj±c u¿ytkownikowi wykonywaæ zapytania na kodzie.
+
 %prep
 %setup -q
 
@@ -35,17 +49,19 @@ allowing the user to run queries on the code.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	shelldesktopdir=%{_applnkdir} \
+	shelldesktopdir=%{_desktopdir} \
+	kde_htmldir=%{_kdedocdir} \
 	DESTDIR=$RPM_BUILD_ROOT
+
+%find_lang %{name} --with-kde
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/apps/%{name}
-%{_datadir}/doc/HTML/en/%{name}
 %{_iconsdir}/*/*/*/*.png
-%{_applnkdir}/*.desktop
+%{_desktopdir}/*.desktop
