@@ -9,6 +9,7 @@ Source0:	http://dl.sourceforge.net/kscope/%{name}-%{version}.tar.gz
 # Source0-md5:	f6dbd3916b6dc3b85472a3207fa12a00
 Patch0:		%{name}-desktop.patch
 URL:		http://kscope.sourceforge.net/
+BuildRequires:	automake
 BuildRequires:	kdebase-devel
 Requires:	cscope
 Requires:	ctags
@@ -45,6 +46,7 @@ pozwalaj±c u¿ytkownikowi wykonywaæ zapytania na kodzie.
 %patch0 -p1
 
 %build
+cp -f /usr/share/automake/config.sub admin
 %configure
 %{__make}
 
