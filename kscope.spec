@@ -1,16 +1,18 @@
 Summary:	KDE front-end to Cscope
 Summary(pl):	Interfejs KDE do Cscope
 Name:		kscope
-Version:	1.1.0
+Version:	1.3.0
 Release:	1
 License:	GPL v2
 Group:		X11/Development/Tools
 Source0:	http://dl.sourceforge.net/kscope/%{name}-%{version}.tar.gz
-# Source0-md5:	2307f182f84fee474ff8bc1630cf3b3c
+# Source0-md5:	1b593c109b59bd65345d0bf9339ff674
 Patch0:		%{name}-desktop.patch
 URL:		http://kscope.sourceforge.net/
 BuildRequires:	automake
+BuildRequires:	graphviz-devel
 BuildRequires:	kdebase-devel
+BuildRequires:	libsvg-cairo-devel
 Requires:	cscope
 Requires:	ctags
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
