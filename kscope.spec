@@ -10,7 +10,7 @@ Source0:	http://dl.sourceforge.net/kscope/%{name}-%{version}.tar.gz
 Patch0:		%{name}-desktop.patch
 URL:		http://kscope.sourceforge.net/
 BuildRequires:	automake
-BuildRequires:	graphviz-devel >= 2.6-4
+BuildRequires:	graphviz-devel >= 2.6-3
 BuildRequires:	kdebase-devel
 BuildRequires:	pkgconfig
 Requires:	cscope
