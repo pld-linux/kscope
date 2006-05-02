@@ -13,6 +13,7 @@ BuildRequires:	automake
 BuildRequires:	graphviz-devel >= 2.6-3
 BuildRequires:	kdebase-devel
 BuildRequires:	pkgconfig
+BuildRequires:	rpmbuild(macros) >= 1.129
 Requires:	cscope
 Requires:	ctags
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
