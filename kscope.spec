@@ -1,5 +1,5 @@
 Summary:	KDE front-end to Cscope
-Summary(pl):	Interfejs KDE do Cscope
+Summary(pl.UTF-8):   Interfejs KDE do Cscope
 Name:		kscope
 Version:	1.4.2
 Release:	1
@@ -30,18 +30,18 @@ will prevent any useful navigation throughout the code. KScope, on the
 other hand, provides a rather useful mechanism for code-navigation, by
 allowing the user to run queries on the code.
 
-%description -l pl
-KScope to interfejs KDE do Cscope. Daje ¶rodowisko do edycji ¼róde³
-dla du¿ych projektów w C, jak na przyk³ad j±dro Linuksa. KScope nie ma
-byæ zamiennikiem dla ¿adnego z wiod±cych IDE dla Linuksa/KDE, takich
-jak KDevelop. Mimo wszystko, te IDE, czêsto przeznaczone do
-programowania zorientowanego obiektowo, w przestrzeni u¿ytkownika,
-zwykle nie pasuj± do utrzymywania du¿ych projektów, u¿ywaj±cych
-programowania funkcyjnego. Na przyk³ad, u¿ywanie okna "Klasy" do
-wy¶wietlania tysiêcy funkcji z j±dra Linuksa, by³oby niepraktyczne, i
-przeszkadza³oby w u¿ytecznej nawigacji po kodzie. KScope, z drugiej
-strony, dostarcza ca³kiem przydatny mechanizm do nawigacji po kodzie,
-pozwalaj±c u¿ytkownikowi wykonywaæ zapytania na kodzie.
+%description -l pl.UTF-8
+KScope to interfejs KDE do Cscope. Daje Å›rodowisko do edycji ÅºrÃ³deÅ‚
+dla duÅ¼ych projektÃ³w w C, jak na przykÅ‚ad jÄ…dro Linuksa. KScope nie ma
+byÄ‡ zamiennikiem dla Å¼adnego z wiodÄ…cych IDE dla Linuksa/KDE, takich
+jak KDevelop. Mimo wszystko, te IDE, czÄ™sto przeznaczone do
+programowania zorientowanego obiektowo, w przestrzeni uÅ¼ytkownika,
+zwykle nie pasujÄ… do utrzymywania duÅ¼ych projektÃ³w, uÅ¼ywajÄ…cych
+programowania funkcyjnego. Na przykÅ‚ad, uÅ¼ywanie okna "Klasy" do
+wyÅ›wietlania tysiÄ™cy funkcji z jÄ…dra Linuksa, byÅ‚oby niepraktyczne, i
+przeszkadzaÅ‚oby w uÅ¼ytecznej nawigacji po kodzie. KScope, z drugiej
+strony, dostarcza caÅ‚kiem przydatny mechanizm do nawigacji po kodzie,
+pozwalajÄ…c uÅ¼ytkownikowi wykonywaÄ‡ zapytania na kodzie.
 
 %prep
 %setup -q
