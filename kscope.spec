@@ -1,5 +1,5 @@
 Summary:	KDE front-end to Cscope
-Summary(pl.UTF-8):   Interfejs KDE do Cscope
+Summary(pl.UTF-8):	Interfejs KDE do Cscope
 Name:		kscope
 Version:	1.4.2
 Release:	1
